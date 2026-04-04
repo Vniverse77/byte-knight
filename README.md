@@ -17,7 +17,7 @@
 
 ## Overview
 
-This repository is a fork of [Neuwj-00/byte-knight](https://github.com/Neuwj-00/byte-knight), adapted specifically for **Arch Linux** and its derivatives (Manjaro, EndeavourOS, Garuda, etc.).
+This repository is a fork of [Neuwj-00/byte-knight](https://github.com/Neuwj-00/byte-knight), adapted specifically for **Arch Linux** by [Vniverse77](https://github.com/Vniverse77)and its derivatives (Manjaro, EndeavourOS, Garuda, etc.).
 
 The original project provides a suite of high-performance C++ terminal utilities with packaging support for Debian (`.deb`) and Red Hat (`.rpm`) ecosystems. This fork focuses on bringing those tools to the Arch Linux ecosystem.
 
@@ -34,18 +34,14 @@ The original project provides a suite of high-performance C++ terminal utilities
 
 ## Installation
 
-### Arch Linux — Build from Source
+### Arch Linux — All you need to do install the package with yay (AUR)
 
 ```bash
 # Clone the repository
-git clone https://github.com/Vniverse77/byte-knight.git
-cd byte-knight/src
-
-# Compile with g++ (example: foldertree)
-g++ -std=c++17 -O2 -Wl,-z,relro,-z,now -o ftr foldertree.cpp
-
-# Install the compiled binary to your system path
-sudo install -Dm755 ftr /usr/bin/ftr
+yay -S repoforge-git
+yay -S pacforge-git
+yay -S warpcpp
+yay -S ftr
 ```
 
 ### Other Distributions
@@ -88,6 +84,8 @@ Contributions, bug reports, and feature requests are welcome. Feel free to open 
 |---|---|
 | Developer | Vniverse77 |
 | GitHub | [github.com/Vniverse77](https://github.com/Vniverse77) |
+| Website | [vniverse77.com](https://vniverse77.com) |
+| Email | vniverse77@protonmail.com |
 | Role | Arch Linux packaging and distribution |
 
 **Original project:**
